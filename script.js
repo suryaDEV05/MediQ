@@ -349,7 +349,22 @@ if(floatingWhatsapp){
     );
 
 }
+function changeImage(element) {
 
+    const mainImage =
+        document.getElementById("mainProductImage");
+
+    mainImage.src = element.src;
+
+    document
+        .querySelectorAll(".thumbnail-gallery img")
+        .forEach(img => {
+            img.classList.remove("active-thumb");
+        });
+
+    element.classList.add("active-thumb");
+
+}
 
 /* =========================================
    CONSOLE BRANDING
