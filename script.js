@@ -213,7 +213,7 @@ whatsappButtons.forEach(button => {
         const titleEl = card.querySelector("h3") || card.querySelector(".product-content h3");
         const productName = titleEl ? titleEl.innerText.trim() : 'this product';
 
-        const message = `Hello MEDIQ, I am interested in ${productName}. Please share details and pricing.`;
+        const message = `Hello Srinivas.N, I am interested in ${productName}. Please share details and pricing.`;
         const encodedMessage = encodeURIComponent(message);
 
         // If button is an <a>, update href; otherwise open in new tab
